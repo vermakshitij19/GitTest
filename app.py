@@ -18,7 +18,7 @@ def lambda_handler(event, context):
         else:
             response = rds.delete_db_instance(
                 DBInstanceIdentifier=db_instance_id,
-                SkipFinalSnapshot=False,
+                SkipFinalSnapshot=Tru,
                 FinalDBSnapshotIdentifier=final_snapshot_id
             )
 
